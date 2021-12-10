@@ -14,6 +14,7 @@ struct CarInformation: Codable{
     let ownerAddress: String
     let ownerPhone: String
     let make: String
+    let colour: String
     let model: String
     let manufactureYear: Int
     let vin: String

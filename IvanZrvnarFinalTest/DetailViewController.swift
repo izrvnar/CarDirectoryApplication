@@ -17,7 +17,8 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var phoneNumberLabel: UILabel!
     
     // car information
-    @IBOutlet weak var yearLabbel: UILabel!
+    
+    @IBOutlet weak var yearLabel: UILabel!
     @IBOutlet weak var makeLabel: UILabel!
     @IBOutlet weak var brandLabel: UILabel!
     @IBOutlet weak var colourLabel: UILabel!
@@ -25,10 +26,23 @@ class DetailViewController: UIViewController {
     
     
 
-
+    var carDetail: CarInformation?
 // MARK: View Method
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // assigning labels to the selected car owner from table view 
+        if let passedCarDetail = carDetail{
+            nameLabel.text = passedCarDetail.ownerName
+            addressLabel.text = passedCarDetail.ownerAddress
+            phoneNumberLabel.text = passedCarDetail.ownerPhone
+            yearLabel.text = "\(passedCarDetail.manufactureYear)"
+            makeLabel.text = passedCarDetail.model
+            brandLabel.text = passedCarDetail.make
+            colourLabel.text = passedCarDetail.colour
+            vinLabel.text = passedCarDetail.vin
+            
+        }
 
         // Do any additional setup after loading the view.
     }

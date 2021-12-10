@@ -6,7 +6,7 @@
 //
 
 import UIKit
-// MARK: VIEW DID LOAD
+// MARK: View did load
 class TableViewController: UITableViewController {
     // empty array of car information
     var carInformation = [CarInformation]()
@@ -23,6 +23,7 @@ class TableViewController: UITableViewController {
                 
         }
         }
+        // adding a show error function in the event something doesnt work
         showError()
     
         
@@ -66,4 +67,17 @@ class TableViewController: UITableViewController {
         present(ac, animated: true)
     }
     
+    // passing the information to the detail view controller
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let selectedIndex = tableView.indexPathForSelectedRow else {
+            return
+        }
+        let carPassed = carInformation[selectedIndex.row]
+        
+        let destinationVC = segue.destination as! DetailViewController
+        destinationVC.carDetail = carPassed
+    }
+    
 }
+
+
