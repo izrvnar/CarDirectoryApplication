@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		35730FEE27638DF700072C23 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35730FED27638DF700072C23 /* DetailViewController.swift */; };
+		35730FF02763948D00072C23 /* CarInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35730FEF2763948D00072C23 /* CarInformation.swift */; };
+		35730FF22763958200072C23 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35730FF12763958200072C23 /* TableViewController.swift */; };
+		35730FF4276398DD00072C23 /* CarInformationResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35730FF3276398DD00072C23 /* CarInformationResults.swift */; };
 		3578004B275FAC66001AC1D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3578004A275FAC66001AC1D3 /* AppDelegate.swift */; };
 		3578004D275FAC66001AC1D3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3578004C275FAC66001AC1D3 /* SceneDelegate.swift */; };
 		3578004F275FAC66001AC1D3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3578004E275FAC66001AC1D3 /* ViewController.swift */; };
@@ -16,6 +20,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		35730FED27638DF700072C23 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		35730FEF2763948D00072C23 /* CarInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarInformation.swift; sourceTree = "<group>"; };
+		35730FF12763958200072C23 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		35730FF3276398DD00072C23 /* CarInformationResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarInformationResults.swift; sourceTree = "<group>"; };
 		35780047275FAC66001AC1D3 /* IvanZrvnarFinalTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IvanZrvnarFinalTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3578004A275FAC66001AC1D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3578004C275FAC66001AC1D3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,10 +64,14 @@
 		35780049275FAC66001AC1D3 /* IvanZrvnarFinalTest */ = {
 			isa = PBXGroup;
 			children = (
+				35730FEF2763948D00072C23 /* CarInformation.swift */,
 				3578004A275FAC66001AC1D3 /* AppDelegate.swift */,
 				3578004C275FAC66001AC1D3 /* SceneDelegate.swift */,
 				3578004E275FAC66001AC1D3 /* ViewController.swift */,
 				35780050275FAC66001AC1D3 /* Main.storyboard */,
+				35730FED27638DF700072C23 /* DetailViewController.swift */,
+				35730FF12763958200072C23 /* TableViewController.swift */,
+				35730FF3276398DD00072C23 /* CarInformationResults.swift */,
 				35780053275FAC67001AC1D3 /* Assets.xcassets */,
 				35780055275FAC67001AC1D3 /* LaunchScreen.storyboard */,
 				35780058275FAC67001AC1D3 /* Info.plist */,
@@ -139,8 +151,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				3578004F275FAC66001AC1D3 /* ViewController.swift in Sources */,
+				35730FF4276398DD00072C23 /* CarInformationResults.swift in Sources */,
+				35730FF22763958200072C23 /* TableViewController.swift in Sources */,
+				35730FF02763948D00072C23 /* CarInformation.swift in Sources */,
 				3578004B275FAC66001AC1D3 /* AppDelegate.swift in Sources */,
 				3578004D275FAC66001AC1D3 /* SceneDelegate.swift in Sources */,
+				35730FEE27638DF700072C23 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
